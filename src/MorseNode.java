@@ -82,7 +82,7 @@ class MorseTree {
                 return '?';
             }
         }
-        return current.letter != '\0' ? current.letter : '?';  // Retorna '?' se não houver letra no nó
+        return current.letter != '\0' ? current.letter : '?';
     }
 
     public String decodeMorse(String morseMessage) {
@@ -91,7 +91,7 @@ class MorseTree {
 
         for (String morseLetter : morseLetters) {
             if (morseLetter.equals("/")) {
-                decodedMessage.append(' ');  // "/" é usado para espaço entre palavras
+                decodedMessage.append(' ');
             } else {
                 decodedMessage.append(morseToChar(morseLetter));
             }
